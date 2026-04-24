@@ -1,5 +1,8 @@
 # EasyEdits – File Renamer
 
+<img width="1081" height="856" alt="screenshot2" src="https://github.com/user-attachments/assets/9c27a444-7691-4500-96b5-a1655c0e6f32" />
+<img width="1083" height="855" alt="screenshot1" src="https://github.com/user-attachments/assets/ebfc0816-497b-47c7-bdea-05a5e50f2c07" />
+
 Simple Windows tool to rename files quickly and safely.  
 Preview changes before applying them and undo mistakes with confidence.
 
