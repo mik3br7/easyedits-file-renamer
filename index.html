@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EasyEdits File Renamer</title>
+  <meta name="description" content="A lightweight file renaming tool for quick, simple, one-off batch renames." />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --accent: #38bdf8;
+      --accent-dark: #0284c7;
+      --border: rgba(255,255,255,0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(56,189,248,0.18), transparent 35%),
+        linear-gradient(135deg, #020617 0%, #0f172a 100%);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    .wrapper {
+      width: min(1050px, 92%);
+      margin: 0 auto;
+      padding: 56px 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 56px 0 36px;
+    }
+
+    .badge {
+      display: inline-block;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      margin-bottom: 18px;
+      background: rgba(255,255,255,0.04);
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 6vw, 5rem);
+      line-height: 1;
+      margin: 0 0 18px;
+      letter-spacing: -0.05em;
+    }
+
+    .subtitle {
+      max-width: 720px;
+      margin: 0 auto 28px;
+      color: var(--muted);
+      font-size: 1.2rem;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 12px;
+      padding: 13px 20px;
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .primary {
+      background: var(--accent);
+      color: #082f49;
+    }
+
+    .primary:hover {
+      background: #7dd3fc;
+    }
+
+    .secondary {
+      border: 1px solid var(--border);
+      color: var(--text);
+      background: rgba(255,255,255,0.05);
+    }
+
+    section {
+      margin-top: 42px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: rgba(17,24,39,0.78);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+      backdrop-filter: blur(8px);
+    }
+
+    .card h2,
+    .card h3 {
+      margin-top: 0;
+      line-height: 1.2;
+    }
+
+    .card p,
+    li {
+      color: var(--muted);
+    }
+
+    .wide {
+      grid-column: span 3;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 0;
+    }
+
+    .mockup {
+      background: #020617;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      margin-top: 18px;
+    }
+
+    .mockup-bar {
+      display: flex;
+      gap: 7px;
+      padding: 12px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(255,255,255,0.04);
+    }
+
+    .dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: #64748b;
+    }
+
+    .mockup-content {
+      padding: 22px;
+      color: var(--muted);
+      font-family: Consolas, Monaco, monospace;
+      font-size: 0.95rem;
+      overflow-x: auto;
+    }
+
+    .highlight {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    footer {
+      text-align: center;
+      color: #94a3b8;
+      padding: 40px 0 10px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 800px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .wide {
+        grid-column: span 1;
+      }
+
+      header {
+        padding-top: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrapper">
+    <header>
+      <div class="badge">Lightweight batch renaming tool</div>
+      <h1>EasyEdits File Renamer</h1>
+      <p class="subtitle">
+        A simple file renamer built for quick one-off cleanup jobs — not complex automation, not power-user overload.
+      </p>
+      <div class="buttons">
+        <a class="button primary" href="https://github.com/mik3br7/easyedits-file-renamer" target="_blank" rel="noopener">View on GitHub</a>
+        <a class="button secondary" href="#about">What it does</a>
+      </div>
+    </header>
+
+    <section class="grid" id="about">
+      <div class="card">
+        <h3>Simple by design</h3>
+        <p>
+          Built for people who want to rename files without learning a complicated rules engine first.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Quick edits</h3>
+        <p>
+          Ideal for small batches, cleanup tasks, downloaded files, pictures, documents, and messy folders.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Beginner-friendly</h3>
+        <p>
+          The goal is a lightweight experience that feels approachable instead of intimidating.
+        </p>
+      </div>
+
+      <div class="card wide">
+        <h2>Why this exists</h2>
+        <p>
+          There are already powerful renaming tools for advanced users. EasyEdits File Renamer is aimed at a different use case:
+          quick, visual, low-friction file renaming when you just need to clean up a folder and move on.
+        </p>
+
+        <div class="mockup">
+          <div class="mockup-bar">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div class="mockup-content">
+            <div><span class="highlight">Before:</span> IMG_4829.jpg, IMG_4830.jpg, IMG_4831.jpg</div>
+            <div><span class="highlight">After:</span> vacation-01.jpg, vacation-02.jpg, vacation-03.jpg</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Use cases</h3>
+        <ul>
+          <li>Cleaning up picture names</li>
+          <li>Renaming downloaded files</li>
+          <li>Organizing folders</li>
+          <li>Making filenames easier to read</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Positioning</h3>
+        <p>
+          This is not trying to replace advanced tools. It is a lighter option for people who only need the basics.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Status</h3>
+        <p>
+          Early build. Feedback is welcome, especially around what would make a lightweight renamer useful enough to try.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      Built by Mike Brown · EasyEdits File Renamer
+    </footer>
+  </main>
+</body>
+</html>
