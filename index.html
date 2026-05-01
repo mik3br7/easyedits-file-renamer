@@ -12,13 +12,10 @@
       --text: #f8fafc;
       --muted: #cbd5e1;
       --accent: #38bdf8;
-      --accent-dark: #0284c7;
       --border: rgba(255,255,255,0.12);
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -84,18 +81,14 @@
       transition: transform 0.15s ease, background 0.15s ease;
     }
 
-    .button:hover {
-      transform: translateY(-2px);
-    }
+    .button:hover { transform: translateY(-2px); }
 
     .primary {
       background: var(--accent);
       color: #082f49;
     }
 
-    .primary:hover {
-      background: #7dd3fc;
-    }
+    .primary:hover { background: #7dd3fc; }
 
     .secondary {
       border: 1px solid var(--border);
@@ -103,9 +96,7 @@
       background: rgba(255,255,255,0.05);
     }
 
-    section {
-      margin-top: 42px;
-    }
+    section { margin-top: 42px; }
 
     .grid {
       display: grid;
@@ -122,20 +113,14 @@
       backdrop-filter: blur(8px);
     }
 
-    .card h2,
-    .card h3 {
+    .card h2, .card h3 {
       margin-top: 0;
       line-height: 1.2;
     }
 
-    .card p,
-    li {
-      color: var(--muted);
-    }
+    .card p, li { color: var(--muted); }
 
-    .wide {
-      grid-column: span 3;
-    }
+    .wide { grid-column: span 3; }
 
     ul {
       padding-left: 20px;
@@ -186,20 +171,13 @@
     }
 
     @media (max-width: 800px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
-
-      .wide {
-        grid-column: span 1;
-      }
-
-      header {
-        padding-top: 32px;
-      }
+      .grid { grid-template-columns: 1fr; }
+      .wide { grid-column: span 1; }
+      header { padding-top: 32px; }
     }
   </style>
 </head>
+
 <body>
   <main class="wrapper">
     <header>
@@ -209,7 +187,7 @@
         A simple file renamer built for quick one-off cleanup jobs — not complex automation, not power-user overload.
       </p>
       <div class="buttons">
-        <a class="button primary" href="https://github.com/mik3br7/easyedits-file-renamer" target="_blank" rel="noopener">View on GitHub</a>
+        <a class="button primary" href="https://github.com/mik3br7/easyedits-file-renamer" target="_blank">View on GitHub</a>
         <a class="button secondary" href="#about">What it does</a>
       </div>
     </header>
@@ -217,23 +195,17 @@
     <section class="grid" id="about">
       <div class="card">
         <h3>Simple by design</h3>
-        <p>
-          Built for people who want to rename files without learning a complicated rules engine first.
-        </p>
+        <p>Built for people who want to rename files without learning a complicated rules engine first.</p>
       </div>
 
       <div class="card">
         <h3>Quick edits</h3>
-        <p>
-          Ideal for small batches, cleanup tasks, downloaded files, pictures, documents, and messy folders.
-        </p>
+        <p>Ideal for small batches, cleanup tasks, downloaded files, pictures, documents, and messy folders.</p>
       </div>
 
       <div class="card">
         <h3>Beginner-friendly</h3>
-        <p>
-          The goal is a lightweight experience that feels approachable instead of intimidating.
-        </p>
+        <p>The goal is a lightweight experience that feels approachable instead of intimidating.</p>
       </div>
 
       <div class="card wide">
@@ -250,9 +222,17 @@
             <span class="dot"></span>
           </div>
           <div class="mockup-content">
-            <div><span class="highlight">Before:</span> IMG_4829.jpg, IMG_4830.jpg, IMG_4831.jpg</div>
-            <div><span class="highlight">After:</span> vacation-01.jpg, vacation-02.jpg, vacation-03.jpg</div>
+            <div><span class="highlight">Before:</span> IMG_4829.jpg, IMG_4830.jpg</div>
+            <div><span class="highlight">After:</span> vacation-01.jpg, vacation-02.jpg</div>
           </div>
+        </div>
+      </div>
+
+      <div class="card wide">
+        <h2>Screenshots</h2>
+        <div style="display: grid; gap: 16px; margin-top: 16px;">
+          <img src="screenshot1.png" alt="EasyEdits screenshot 1" style="width: 100%; border-radius: 12px;">
+          <img src="screenshot2.png" alt="EasyEdits screenshot 2" style="width: 100%; border-radius: 12px;">
         </div>
       </div>
 
@@ -268,21 +248,17 @@
 
       <div class="card">
         <h3>Positioning</h3>
-        <p>
-          This is not trying to replace advanced tools. It is a lighter option for people who only need the basics.
-        </p>
+        <p>This is not trying to replace advanced tools. It is a lighter option for people who only need the basics.</p>
       </div>
 
       <div class="card">
         <h3>Status</h3>
-        <p>
-          Early build. Feedback is welcome, especially around what would make a lightweight renamer useful enough to try.
-        </p>
+        <p>Early build. Feedback is welcome.</p>
       </div>
     </section>
 
     <footer>
-      Built by Mike Brown · EasyEdits File Renamer
+      Built by <a href="https://github.com/mik3br7" target="_blank" style="color:#38bdf8; text-decoration:none;">mik3br7</a> · EasyEdits File Renamer
     </footer>
   </main>
 </body>
