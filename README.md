@@ -16,6 +16,7 @@ Preview changes before applying them and undo mistakes with confidence.
 
 ⚠️ Windows Notice
 Windows may block the .bat file since it was downloaded from the internet.
+
 If prompted, click “More info” → “Run anyway.”
 
 The script is fully visible in this repo if you’d like to review it before running.
