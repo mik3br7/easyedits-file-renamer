@@ -15,6 +15,7 @@ Preview changes before applying them and undo mistakes with confidence.
 👉 Download the latest version from the Releases section on this page.
 
 ⚠️ Windows Notice
+
 Windows may block the .bat file since it was downloaded from the internet.
 
 If prompted, click “More info” → “Run anyway.”
