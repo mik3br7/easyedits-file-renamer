@@ -1,8 +1,8 @@
 # EasyEdits – File Renamer
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/ebfc0816-497b-47c7-bdea-05a5e50f2c07" width="45%" />
-  <img src="https://github.com/user-attachments/assets/9c27a444-7691-4500-96b5-a1655c0e6f32" width="45%" />
+  <img src="screenshot1.png" width="45%" />
+  <img src="screenshot2.png" width="45%" />
 </p>
 
 Lightweight Windows tool for batch renaming files — with preview and undo.
