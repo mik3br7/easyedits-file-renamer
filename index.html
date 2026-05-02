@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EasyEdits File Renamer</title>
-  <meta name="description" content="A lightweight file renaming tool for quick, simple, one-off batch renames." />
+  <meta name="description" content="A lightweight file renaming tool with preview and undo for quick, safe batch renames." />
   <style>
     :root {
       --bg: #0f172a;
@@ -59,9 +59,15 @@
 
     .subtitle {
       max-width: 720px;
-      margin: 0 auto 28px;
+      margin: 0 auto 18px;
       color: var(--muted);
       font-size: 1.2rem;
+    }
+
+    .trust {
+      color: var(--muted);
+      margin-top: 10px;
+      font-size: 0.95rem;
     }
 
     .buttons {
@@ -184,35 +190,38 @@
       <div class="badge">Lightweight batch renaming tool</div>
       <h1>EasyEdits File Renamer</h1>
       <p class="subtitle">
-        A simple file renamer built for quick one-off cleanup jobs — not complex automation, not power-user overload.
+        A simple file renamer with preview and undo — built for quick, safe batch renaming without complexity.
       </p>
+      <p class="trust">
+        Runs locally · No files uploaded · Standalone Windows executable (.exe)
+      </p>
+
       <div class="buttons">
-        <a class="button primary" href="https://github.com/mik3br7/easyedits-file-renamer" target="_blank">View on GitHub</a>
-        <a class="button secondary" href="#about">What it does</a>
+        <a class="button primary" href="https://github.com/mik3br7/easyedits-file-renamer/releases" target="_blank">Download .exe</a>
+        <a class="button secondary" href="https://github.com/mik3br7/easyedits-file-renamer" target="_blank">View Source</a>
       </div>
     </header>
 
     <section class="grid" id="about">
       <div class="card">
         <h3>Simple by design</h3>
-        <p>Built for people who want to rename files without learning a complicated rules engine first.</p>
+        <p>Built for people who want to rename files without learning a complicated system.</p>
       </div>
 
       <div class="card">
         <h3>Quick edits</h3>
-        <p>Ideal for small batches, cleanup tasks, downloaded files, pictures, documents, and messy folders.</p>
+        <p>Perfect for cleaning up downloaded files, photos, and messy folders.</p>
       </div>
 
       <div class="card">
         <h3>Beginner-friendly</h3>
-        <p>The goal is a lightweight experience that feels approachable instead of intimidating.</p>
+        <p>No scripting or technical knowledge required — just select, preview, and rename.</p>
       </div>
 
       <div class="card wide">
         <h2>Why this exists</h2>
         <p>
-          There are already powerful renaming tools for advanced users. EasyEdits File Renamer is aimed at a different use case:
-          quick, visual, low-friction file renaming when you just need to clean up a folder and move on.
+          There are already powerful renaming tools for advanced users. EasyEdits focuses on quick, visual, low-friction file renaming for everyday tasks.
         </p>
 
         <div class="mockup">
@@ -231,8 +240,8 @@
       <div class="card wide">
         <h2>Screenshots</h2>
         <div style="display: grid; gap: 16px; margin-top: 16px;">
-          <img src="screenshot1.png" alt="EasyEdits screenshot 1" style="width: 100%; border-radius: 12px;">
-          <img src="screenshot2.png" alt="EasyEdits screenshot 2" style="width: 100%; border-radius: 12px;">
+          <img src="screenshot1.png" style="width: 100%; border-radius: 12px;">
+          <img src="screenshot2.png" style="width: 100%; border-radius: 12px;">
         </div>
       </div>
 
@@ -248,12 +257,12 @@
 
       <div class="card">
         <h3>Positioning</h3>
-        <p>This is not trying to replace advanced tools. It is a lighter option for people who only need the basics.</p>
+        <p>A lightweight alternative to complex renaming tools — focused on simplicity and speed.</p>
       </div>
 
       <div class="card">
         <h3>Status</h3>
-        <p>Early build. Feedback is welcome.</p>
+        <p>Active project. Now available as a standalone Windows app (.exe).</p>
       </div>
     </section>
 
