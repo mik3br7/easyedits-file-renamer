@@ -5,44 +5,44 @@
   <img src="https://github.com/user-attachments/assets/9c27a444-7691-4500-96b5-a1655c0e6f32" width="45%" />
 </p>
 
-Simple Windows tool to rename files quickly and safely.  
-Preview changes before applying them and undo mistakes with confidence.
+Lightweight Windows tool for batch renaming files — with preview and undo.
 
----
+## Features
 
-## 🚀 Download
+* Batch renaming
+* Find / replace text
+* Sequential numbering
+* Add or remove text
+* Preview changes before applying
+* Undo support
+* Simple desktop interface
 
-👉 Download the latest version from the Releases section on this page.
+## Download
 
-⚠️ Windows Notice
+Download the latest version from Releases:
+https://github.com/mik3br7/easyedits-file-renamer/releases
 
-Windows may block the .bat file since it was downloaded from the internet.
+## How to Use
 
-If prompted, click “More info” → “Run anyway.”
+1. Download and run `EasyEdits.exe`
+2. Click **Browse** to select a folder
+3. Select which files to rename (nothing is selected by default)
+4. Choose your rename method (Replace, Remove, Add, or Sequential)
+5. Click **Preview Changes**
+6. Click **Apply Rename**
 
-The script is fully visible in this repo if you’d like to review it before running.
+## Notes
 
----
+* All processing runs locally (no files leave your machine)
+* Files are not selected by default — you must choose what to rename
+* The app starts with no folder selected
+* First run may show a Windows SmartScreen warning (common for new unsigned apps)
 
-## ✨ Features
+## Source
 
-- Batch rename multiple files at once  
-- Preview changes before applying  
-- Select only the files you want to rename  
-- Remove or replace text across many files  
-- Add numbering (with custom format and padding)  
-- Works with subfolders  
-- Simple desktop interface (no coding required)  
+Full source code is available here:
+https://github.com/mik3br7/easyedits-file-renamer
 
----
+## License
 
-## 🖥️ Desktop App (Recommended)
-
-Launch the app:
-
-- Double-click: `launch_EasyEdits.bat`
-
-Or run manually:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\EasyEdits_GUI.ps1
+See LICENSE file
