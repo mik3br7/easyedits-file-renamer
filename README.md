@@ -49,3 +49,4 @@ https://github.com/mik3br7/easyedits-file-renamer
 ## License
 
 See LICENSE file
+
