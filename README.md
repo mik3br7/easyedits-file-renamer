@@ -13,6 +13,9 @@ Lightweight Windows tool for batch renaming files — with preview and undo.
 * Find / replace text
 * Sequential numbering
 * Add or remove text
+* Date Cleaner
+* Separator Edits
+* Case Edits
 * Preview changes before applying
 * Undo support
 * Simple desktop interface
